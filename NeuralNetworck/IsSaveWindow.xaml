@@ -1,0 +1,24 @@
+﻿<Window x:Class="NeuralNetworck.IsSaveWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NeuralNetworck"
+        mc:Ignorable="d"
+        Title="Сохранить" Height="120" Width="150"
+        ResizeMode="NoResize"
+        Closing="Window_Closing">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <ComboBox x:Name="Symbol" Grid.Row="0" Grid.ColumnSpan="2"  Width="100" Height="20"></ComboBox>
+        <Button x:Name="Ok" Grid.Row="1" Width="50" Height="30" Click="Ok_Click">Ok</Button>
+        <Button x:Name="Cancel" Grid.Row="1" Grid.Column="1" Width="50" Height="30" Click="Cancel_Click">Отмена</Button>
+    </Grid>
+</Window>
